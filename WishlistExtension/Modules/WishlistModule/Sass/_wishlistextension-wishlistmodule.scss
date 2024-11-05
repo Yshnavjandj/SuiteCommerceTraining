@@ -1,0 +1,29 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.wishlistmodule-info-card {
+    @extend .info-card;
+}
+
+.wishlistmodule-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.wishlist-icon {
+	display: flex;
+	justify-content: end;
+	flex-direction: row;
+	max-width: 11.953em;
+	width: 11.953em;
+	span i {
+		cursor: pointer;
+	}
+}

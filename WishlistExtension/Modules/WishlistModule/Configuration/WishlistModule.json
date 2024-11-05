@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "WishlistModule.config": {
+            "group": "extensions",
+            "subtab": "WishlistModule_subtab",
+            "type": "string",
+            "title": "WishlistModule_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}
