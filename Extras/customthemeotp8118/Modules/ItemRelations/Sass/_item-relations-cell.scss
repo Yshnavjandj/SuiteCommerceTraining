@@ -1,0 +1,9 @@
+.item-relations-cell {
+    text-align: center;
+    margin: 0 $sc-margin-lv2;
+    .item-relations-cell-thumbnail {
+        max-height: 220px;
+        overflow: hidden;
+    }
+}
+

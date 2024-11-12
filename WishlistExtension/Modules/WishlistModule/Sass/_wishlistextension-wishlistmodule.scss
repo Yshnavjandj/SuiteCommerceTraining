@@ -23,7 +23,41 @@
 	flex-direction: row;
 	max-width: 11.953em;
 	width: 11.953em;
-	span i {
+	#openPopup {
 		cursor: pointer;
 	}
 }
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	.popup-content {
+		background: white;
+		margin: 15% auto;
+		padding: 20px;
+		width: 50%;
+		position: relative;
+		border-radius: 8px;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		.close-popup {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			font-size: 24px;
+			font-weight: bold;
+			color: #000;
+			cursor: pointer;
+		}
+	}
+}
+
+
+/* Popup Content */
+  
+/* Close Button */

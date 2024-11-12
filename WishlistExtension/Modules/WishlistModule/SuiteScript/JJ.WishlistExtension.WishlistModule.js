@@ -11,4 +11,5 @@ define('JJ.WishlistExtension.WishlistModule'
 	)
 {
 	'use strict';
+	
 });

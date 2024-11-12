@@ -1,0 +1,12 @@
+.product-line-sku-container {
+	padding: $sc-margin-lv1 0 $sc-margin-lv2 0;
+    clear: both;
+}
+.product-line-sku-value {
+	@extend .sc-sku-value;
+}
+.product-line-sku-label {
+	@extend .sc-sku-label;
+    padding-right: $sc-padding-lv1;
+}
+

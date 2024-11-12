@@ -1,0 +1,80 @@
+{
+    "type": "object",
+    "group": {
+        "id": "customExt",
+        "title": "Extension",
+        "description": "This is the extension tab"
+    },
+    "subtab": {
+        "id": "customfooter",
+        "title": "Footer",
+        "description": "Footer update",
+        "group": "customExt"
+    },
+    "properties": { 
+        "customfooter.phone": {
+            "group": "customExt",
+            "subtab": "customfooter",
+            "type": "string",
+            "title": "Enter phone number",
+            "description": "Enter phone number to display in the footer",
+            "default": ""
+        },
+        "customfooter.email": {
+            "group": "customExt",
+            "subtab": "customfooter",
+            "type": "string",
+            "title": "Enter email",
+            "description": "Enter email to display in the footer",
+            "default": ""
+        },
+        "customfooter.address": {
+            "group": "customExt",
+            "subtab": "customfooter",
+            "type": "string",
+            "title": "Enter address",
+            "description": "Enter address to display in the footer",
+            "default": ""
+        },
+        "customfooter.quickLinks": {
+            "group": "customExt",
+            "subtab": "customfooter",
+            "type": "array",
+            "title": "Quick Links",
+            "description": "Enter the quick links to display in the footer",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Link Text"
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Link URL"
+                    }
+                }
+            }
+        },
+        "customfooter.socialMediaLinks": {
+            "group": "customExt",
+            "subtab": "customfooter",
+            "type": "array",
+            "title": "Social Media Links",
+            "description": "Enter the social media links to display in the footer",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "icon": {
+                        "type": "string",
+                        "title": "Icon Class"
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "Link URL"
+                    }
+                }
+            }
+        }
+    }
+}

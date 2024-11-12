@@ -1,20 +1,34 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <div data-view="WishlistIconView">
-  <span class="wishlist-icon" id="toggleWishlistStatus">
-    {{#if isInWishlist}}
-    <span><i class="bi bi-suit-heart-fill"></i></span>
-    {{else}}
-    <span><i class="bi bi-suit-heart"></i></span>
-    {{/if}}
+  <span class="wishlist-icon">
+    <i class="bi bi-three-dots" id="openPopup"></i>
   </span>
 </div>
+<div data-view="AddToProductList" class="product-details-full-actions-addtowishlist option-selection" data-action="add-to-wishlist"></div>
 
-
-
-{{!-- <div data-view="WishlistIconView">
-    <h1>Hi</h1>
-</div> --}}
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-popup" id="closePopup">&times;</span>
+    <h2>Choose item:</h2>
+    {{!-- <ul>
+      {{#each matrixDetails}}
+        <li>{{color}} : {{size}}</li>
+      {{/each}}
+    </ul> --}}
+    <form id="matrix-options-form">
+      {{#each matrixDetails}}
+        <div class="matrix-option">
+          <label>
+            <input type="radio" name="matrixOption" value="{{id}}" />
+            {{color}} : {{size}}
+          </label>
+        </div>
+      {{/each}}
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
 
 
 

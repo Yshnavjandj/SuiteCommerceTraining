@@ -1,0 +1,40 @@
+.product-detail-to-quote-add-to-quote-button {
+	cursor:pointer;
+	font-weight: $sc-font-weight-normal;
+	margin-top: $sc-margin-lv3;
+	margin-left: 0;
+	width: 100%;
+    background: none;
+    text-decoration: underline;
+    text-align: left;
+
+    &:focus,
+    &:focus-within,
+    &:hover {
+        outline: 0;
+        color: $sc-color-link-hover;
+        cursor: pointer;
+    }
+
+    &:focus,
+    &:focus-within {
+        outline: 1px solid $sc-color-link-hover;
+    }
+
+    &:disabled {
+        pointer-events: none;
+        cursor: no-drop;
+    }
+}
+
+.product-detail-to-quote-loading {
+	@extend .product-detail-to-quote-add-to-quote-button;
+	@extend .product-detail-to-quote-add-to-quote-button, :disabled;
+	cursor: auto;
+}
+
+.quick-view-confirmation-modal .product-detail-to-quote-add-to-quote {
+	padding-left: 0;
+	padding-right: $sc-padding-lv3;
+}
+

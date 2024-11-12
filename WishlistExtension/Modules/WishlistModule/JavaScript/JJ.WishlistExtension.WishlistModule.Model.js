@@ -9,7 +9,6 @@ define("JJ.WishlistExtension.WishlistModule.Model", ["Backbone", "Utils"], funct
 
     // @class Case.Fields.Model @extends Backbone.Model
     return Backbone.Model.extend({
-
         
         //@property {String} urlRoot
         urlRoot: Utils.getAbsoluteUrl(
